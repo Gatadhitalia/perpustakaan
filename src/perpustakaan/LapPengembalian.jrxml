@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e615cb38-4703-496a-b699-84d86f5fce3c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from pengembalian;]]>
+	</queryString>
+	<field name="kd_kembali" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nim" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nm_mhs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kd_buku" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="judul_buku" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kd_pinjam" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_pinjam" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_kembali" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="159" y="0" width="475" height="79" uuid="675897d8-be34-4140-9454-0b9bf5f70a94"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Showcard Gothic" size="30" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PEMINJAMAN BUKU PERPUSTAKAAN]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="49" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="20" uuid="d5dbd907-74dc-42cf-8876-b191dcbb95df"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="80" splitType="Stretch">
+			<rectangle>
+				<reportElement x="710" y="22" width="92" height="58" uuid="6cbb5e02-94d7-41ef-b862-5f176a4b7646"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="618" y="22" width="92" height="58" uuid="a3c1be51-c6d0-42f2-b629-5a56f615f3c2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="22" width="92" height="58" uuid="7f446d24-c963-42d9-8be8-c394f5037978"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="92" y="22" width="79" height="58" uuid="82303e2e-e239-4a32-8d5a-60cd576ff8fd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="170" y="22" width="95" height="58" uuid="18e0f4f1-f877-429b-8884-839cd9c6ead7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="22" width="81" height="58" uuid="42484867-9e7d-470c-8f6f-e6c96c2e1f54"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="22" width="92" height="58" uuid="14cbd724-d236-48e8-bd44-eab98f690b36"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode Pengembalian]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="346" y="22" width="173" height="58" uuid="a2ef1810-b168-417a-92e7-9ce51caf8065"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="92" y="22" width="79" height="58" uuid="d1e53304-c56c-4dd9-b606-931a700855c6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="618" y="22" width="92" height="58" uuid="cb78e258-3480-4291-a41c-60e7f0f74595"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Pinjam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="22" width="95" height="58" uuid="64b2f4f1-d399-4416-bd71-b72c3a6cb00a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Mahasiswa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="346" y="22" width="173" height="58" uuid="19981127-9214-4201-bfcc-a4103039de39"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Judul Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="265" y="22" width="81" height="58" uuid="28bcecb1-58a8-4813-9966-91f098be6a59"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="710" y="22" width="92" height="58" uuid="f362cf4b-86a0-4db5-9016-8e9e917c9952"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Pinjam]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="519" y="22" width="99" height="58" uuid="4dbddd94-50b5-417f-befe-929c6e7579cc"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="519" y="22" width="99" height="58" uuid="9cca6adc-86b4-4839-963d-1493c6d1b954"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode Peminjaman]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<rectangle>
+				<reportElement x="92" y="0" width="78" height="36" uuid="e53f28d9-7305-4e2c-8e1e-11d3aa3e6287"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="170" y="0" width="95" height="36" uuid="d59b5a3f-f38f-4d94-be0b-b93e4a624676"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="519" y="0" width="99" height="36" uuid="60bfa088-1089-4fc3-8052-4ab816d53818"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="346" y="0" width="173" height="36" uuid="086b2f42-8600-456a-b43f-4b26775f2d06"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="92" height="36" uuid="67625817-cbec-490b-8e3c-d8cc107ebb8d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="0" width="81" height="36" uuid="578ff508-35ca-48a8-879c-0ef56b1e02ee"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="618" y="0" width="92" height="36" uuid="30a9ddeb-210a-4e99-a9f5-e24b413393f7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="710" y="0" width="92" height="36" uuid="c2cf63d7-b548-4b09-b30f-519cf7ae2bdf"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="92" height="36" uuid="afbda6ac-e5f1-41dc-91c7-40af8ecf96fb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kd_kembali}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="0" width="78" height="36" uuid="4125923e-9e65-40fe-be62-441c39b51942"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="1" width="95" height="35" uuid="75f880f1-466f-40e2-8287-13305db32b14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nm_mhs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="265" y="0" width="81" height="36" uuid="fde90814-2367-4384-8422-f6ee2f707c91"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kd_buku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="346" y="0" width="173" height="36" uuid="b82e4cb1-1713-420b-9f3f-17f26daf559f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{judul_buku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="519" y="0" width="99" height="36" uuid="b0790aa8-881e-420d-b615-a36d948d0db8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kd_pinjam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="618" y="1" width="92" height="35" uuid="b224645f-5093-4984-b278-881e32c0abd1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tgl_pinjam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="710" y="0" width="92" height="36" uuid="2ae4902d-3759-4fb7-bbb3-94965bff6666"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tgl_kembali}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9752a25e-6a96-45d5-95cd-e4171c8af7e8">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from pengunjung;]]>
+	</queryString>
+	<field name="nim" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nm_mhs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<staticText>
+				<reportElement x="226" y="0" width="337" height="79" uuid="85d6b7f8-98e8-42d6-b25a-683fcd17c3fd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Showcard Gothic" size="30"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PENGUNJUNG PERPUSTAKAAN]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="20" uuid="e1b1ffce-b192-4bd8-9eaf-ae9e3122c5b3"/>
+				<text><![CDATA[-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="80" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="22" width="226" height="58" uuid="08d6242a-53f4-4a1b-9cb1-22d86f85a9d2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="226" y="22" width="287" height="58" uuid="ed92a8dc-50a0-46a7-b360-f49c3a3d3a77"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="513" y="22" width="289" height="58" uuid="41296b53-3e89-4468-bb40-af1f4db4aa31"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="22" width="226" height="58" uuid="e85c2421-f3ab-4037-b81a-a6b4ea8c2f25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="226" y="22" width="287" height="58" uuid="ae5ec95f-1c98-4de0-9137-a016adb00fb2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Mahasiswa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="513" y="22" width="289" height="58" uuid="c2df3782-7f17-4c8f-8be3-6542ad086a56"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Kedatangan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<rectangle>
+				<reportElement x="226" y="0" width="287" height="35" uuid="01487a21-8a66-4086-883d-39884b0d83b2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="513" y="0" width="289" height="35" uuid="0e42e55f-4d10-4465-b5d0-e43b75ad93bd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="226" height="35" uuid="d799a290-4762-411c-b656-0f148cb4ee4d"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="226" height="35" uuid="2069f296-025d-4609-b22d-7d98b30ff30f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="226" y="0" width="287" height="35" uuid="b58c1b98-0fb9-4e84-91f8-14e65322a3f2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nm_mhs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="513" y="0" width="289" height="35" uuid="873d06bd-7dac-4240-9329-455c69a92734"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tanggal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="1" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

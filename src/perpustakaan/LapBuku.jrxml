@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3e549aa1-c595-4b43-82cf-794e89eb31d8">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from buku;]]>
+	</queryString>
+	<field name="kd_buku" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="isbn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="judul_buku" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="penulis" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="penerbit" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="88" splitType="Stretch">
+			<staticText>
+				<reportElement x="225" y="0" width="385" height="78" uuid="f106975a-eda4-4e2e-ae2e-b092b2a07e3a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Showcard Gothic" size="30"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA BUKU PERPUSTAKAAN]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="20" uuid="fdc4466d-3c55-464d-8d6a-955c4c724b5d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="75" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="17" width="100" height="58" uuid="66fce157-ca4d-42b9-8753-c87c981add50"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="100" y="17" width="125" height="58" uuid="ebe434f6-918e-43e9-baac-9d7872111003"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="225" y="17" width="244" height="58" uuid="30cb65bd-2611-423d-a176-1d5b2754463b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="469" y="17" width="125" height="58" uuid="80e50622-b1c6-4dec-a9e2-ad7b4e8e7e98"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="594" y="17" width="108" height="58" uuid="7c664fec-8ff1-4a0a-9554-f0c9c7737cf3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="702" y="17" width="100" height="58" uuid="fe64bd5c-eb04-4b67-8c51-fd05491251c9"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="17" width="100" height="58" uuid="c0ae27c5-bc73-4778-9ed6-93f51ba80d7b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="17" width="125" height="58" uuid="94a52833-433f-49a9-9ec4-1f6294afba78"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ISBN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="225" y="17" width="244" height="58" uuid="2c2df50a-e8bd-499c-af7f-e13ebefe1054"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Judul Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="17" width="125" height="58" uuid="c9df108b-e035-46b8-ba93-d9ae132c62b9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Penulis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="594" y="17" width="108" height="58" uuid="0d46d0e3-385a-4772-ba34-481ad111f57a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Penerbit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="702" y="17" width="100" height="58" uuid="33ef3c4c-01cf-4d0e-9aa6-0fa0ce3ee823"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="100" height="37" uuid="7ae4b9b6-f60b-4188-9ca9-27897f3de5a5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="100" y="0" width="125" height="37" uuid="a8c76ca1-68d0-4461-91a0-5c11f289ea28"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="225" y="0" width="244" height="37" uuid="92828289-f953-4a89-b726-a2a75ecae124"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="469" y="0" width="125" height="37" uuid="2f2d654a-0a23-4ce6-98b2-55f8dff7f68c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="594" y="0" width="108" height="37" uuid="28a8409d-1beb-4d96-b520-1f3d6bfb4127"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="702" y="0" width="100" height="37" uuid="e0bf5b37-a225-41e8-a657-f3c5c5f3f294"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="37" uuid="8e9632d7-e6ce-4a5c-94ca-9eb7563a9670"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kd_buku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="125" height="37" uuid="a165a538-e1ef-463f-8e8b-565d047104b8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{isbn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="225" y="0" width="244" height="37" uuid="8d743556-8707-4310-9cb2-813a5b26fe14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{judul_buku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="469" y="0" width="125" height="37" uuid="39473059-c083-4dd9-9324-43a8fea47963"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{penulis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="594" y="0" width="108" height="37" uuid="ed9e5f1d-6b6c-4bf1-8254-afa39813654d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{penerbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="702" y="0" width="100" height="37" uuid="51bd0d7a-a59e-46ac-9c1d-7171a8794447"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="26" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="42fb4c3b-7e89-47cc-a28c-48c4a92e2b02">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from peminjaman;]]>
+	</queryString>
+	<field name="kd_pinjam" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nim" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nm_mhs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kd_buku" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="judul_buku" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_pinjam" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="89" splitType="Stretch">
+			<staticText>
+				<reportElement x="150" y="0" width="475" height="79" uuid="521dad79-dfc8-4bc4-89b2-3e3081474ea4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Showcard Gothic" size="30" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PEMINJAMAN BUKU PERPUSTAKAAN]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="752" height="20" uuid="59dc73bd-2c2b-45c3-9e2d-3931c9f5008d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="76" splitType="Stretch">
+			<rectangle>
+				<reportElement x="473" y="18" width="164" height="58" uuid="9c899c68-a5bd-426b-b3b6-d39be6158c96"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="130" y="18" width="112" height="58" uuid="a36ac472-f3ca-4115-ba8a-867e1870685c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="18" width="130" height="58" uuid="66459158-9cbe-4452-8524-fdda99d2e86a"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="18" width="130" height="58" uuid="0bb6ed87-bf84-4d71-9e31-3e4deb581574"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode Peminjaman]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="18" width="112" height="58" uuid="4362503e-3a48-4d0d-9f8c-2c25328b1715"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIM]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="637" y="18" width="115" height="58" uuid="94cb2b63-516e-4313-a102-18e747737352"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="637" y="18" width="115" height="58" uuid="a77beb7f-65ce-4190-b08d-12425cdc54a1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Pinjam]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="239" y="18" width="119" height="58" uuid="7aa5b363-39ca-4e3a-ad2d-cbd0eeec2886"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="239" y="18" width="119" height="58" uuid="a2ede8c3-b7d9-4ebd-8245-f4d4ca00abb0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Mahasiswa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="473" y="18" width="164" height="58" uuid="defa2922-653f-4bda-8214-05a43877fbad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Judul Buku]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="358" y="18" width="115" height="58" uuid="ce6b7254-0d4d-4de1-a477-3e2ba00c415a"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="358" y="18" width="115" height="58" uuid="4a9b7c40-f2ca-4b5c-a27b-e0f3da49947e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode Buku]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<rectangle>
+				<reportElement x="130" y="0" width="112" height="36" uuid="2f73fe1c-24e7-4e0a-b630-ca0bd05db152"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="130" height="36" uuid="8fc9fe3d-87e0-4fb7-9249-291dc06f85d9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="637" y="0" width="115" height="36" uuid="3a44479d-0315-4098-a43b-e8441502fdef"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="130" height="36" uuid="e86c5527-3216-4fba-a724-32f6dc9df5eb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kd_pinjam}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="239" y="0" width="119" height="36" uuid="d7109cd7-0fe7-42cb-846f-c654b02bba8d"/>
+			</rectangle>
+			<textField>
+				<reportElement x="130" y="0" width="112" height="36" uuid="61587135-4bcc-42b5-99e3-cdf1b02da8cb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nim}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="358" y="0" width="115" height="36" uuid="3c220605-9636-44cf-aa1d-b1ff5b13f97f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="473" y="0" width="164" height="36" uuid="8db7d477-afdd-46ac-b9b8-fc894323e727"/>
+			</rectangle>
+			<textField>
+				<reportElement x="358" y="0" width="115" height="36" uuid="a3357b47-d62e-4c2a-a443-0187e0d6894b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kd_buku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="473" y="0" width="164" height="36" uuid="542e4b5b-0653-46a8-9fb5-0caa73d5cf00"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{judul_buku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="637" y="0" width="115" height="36" uuid="f822c301-6049-4dab-8488-cd41296c7db8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tgl_pinjam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="239" y="0" width="119" height="36" uuid="310404c5-9447-4276-a832-253b855f3552"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nm_mhs}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
